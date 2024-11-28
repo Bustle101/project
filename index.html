@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/normalize.css">
+    <link rel="stylesheet" href="./src/styles/proj.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+    <title>ПАМАГИТЕ</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-light  p-3 ba" style="background-color: rgb(255, 236, 236);">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/253/253558.png" class="logo-img me-2" style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                <h2 class="mb-0">Logo</h2>
+            </div>
+            <div class="text-end">
+                <p class="mb-0">Группа<span class="fw-bold"> ЭФБО-05-23</span></p>
+                <p class="mb-0">Недашковская Екатерина Николаевна</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f4dada;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="first_sem.html">Первый семестр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Второй семестр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project_2.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Авторизация</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 mb-5">
+                <div class="card">
+                    <div class="card-header" style="background-color: #f4dada;" >
+                        <h2 id = "h2" class="h5 mb-2">Навигация</h2>
+                    </div>
+                    <div class="card-body" >
+                        <div class="d-flex flex-column">
+                            <a href="#frontend" class="text-decoration-none mb-2">Фронтенд</a>
+                            <a href="#backend" class="text-decoration-none">Бэкенд</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <h1 id = "h1" class="mb-4">Добро пожаловать на мой сайт</h1>
+
+                <!-- Introduction -->
+                <div class="d-flex align-items-center mb-4 flex-column flex-md-row">
+                    <p class="mb-md-0 me-md-4">Меня зовут Недашковская Екатерина Николаевна и я начинающий специалист по веб-разработке.</p>
+                    <img id="studentPhoto" style="width: 300px; height: 200px; object-fit: cover;" src="https://magizoo.ru/upload/medialibrary/47b/afhhm239374ye5e7vhfqpehjezayxvbe/krysy-1.jpg" alt="Фото">
+                </div>
+
+                <!-- Frontend Section -->
+                <div id="frontend" class="card mb-4">
+                    <div class="card-header" style="background-color: #f4dada;">
+                        <h3 class="h4 mb-0">Фронтенд</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="front">Фронтенд (или клиентская часть) - это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.</p>
+                        <div class="text-center">
+                            <iframe id = "video" width="100%" height="315" src="https://www.youtube.com/embed/q8hKTL3swDY?si=32cD-eiGVKqSAWwb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Section -->
+                <div id="backend" class="card">
+                    <div class="card-header" style="background-color: #f4dada;">
+                        <h3 class="h4 mb-0">Бэкенд</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Бэкенд (или серверная часть) - это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.</p>
+                        <div class="text-center">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=syGzJ2bmKIIb5_Pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class=" py-3 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0"><small>&copy; Недашковская Екатерина Николаевна, 2024</small></p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                   
+                    <a  href="http://t.me/+79140942901"><img src="https://t22.ru/images/telegram8.png" width="40" ></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href = "#top" class="scrollToTop">Вверх</a>
+   
+    <script src="prob.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
