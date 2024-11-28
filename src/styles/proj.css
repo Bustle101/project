@@ -1,0 +1,85 @@
+body{
+   background-color:rgb(255, 236, 236);
+}
+.scrollToTop {
+    position: fixed;
+    bottom: 10px; /* Расположение от нижней части экрана */
+    left: 2%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Сдвиг на половину ширины кнопки для точного центрирования */
+    background-color: rgba(126, 61, 195, 0.8); /* Полупрозрачный цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Поля вокруг текста */
+    border-radius: 5px; /* Закругленные углы */
+    text-decoration: none; /* Убираем подчеркивание */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    z-index: 1000; /* Убедитесь, что кнопка поверх других элементов */
+  }
+  
+  .scrollToTop:hover {
+    background-color: rgb(109, 29, 125); /* Цвет фона при наведении */
+}
+
+.navbar-nav a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(234, 157, 177);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px ; /* Добавляем отступы для улучшения внешнего вида */
+    margin: 5px;
+    /* Предотвращаем уменьшение размера ссылок */
+
+    
+}
+
+/* Стиль для изображения */
+#lectures {
+    display: none; /* Таблица скрыта по умолчанию */
+    opacity: 0; /* Полностью прозрачная */
+    transition: opacity 0.8s ease-in-out; /* Плавное изменение прозрачности */
+}
+#lectures.visible {
+    display: block; /* Делаем таблицу видимой */
+    opacity: 1; /* Полная непрозрачность */
+}
+
+
+.navbar-nav a:active{
+    color: rgb(221, 197, 213);
+}
+
+.navbar-nav a:hover{
+    background-color:rgb(221, 96, 130) ;
+} 
+
+
+
+.card-body a{
+    
+    color: rgb(115, 52, 69);
+    text-decoration: none;
+
+    margin: 5px;
+  
+
+    
+}
+.card-body a:active{
+    color: rgb(221, 197, 213);
+}
+.card-body a:hover{
+
+    background-color:rgb(238, 194, 206) ;
+} 
+
+
+
+.max-width-100 {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .max-width-100 {
+        max-width: 100%;
+    }
+}

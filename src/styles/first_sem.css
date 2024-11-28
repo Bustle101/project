@@ -1,0 +1,135 @@
+body{
+   background-color:rgb(255, 236, 236);
+}
+
+#h1 {
+    cursor: pointer;
+    
+}
+
+#lectures {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#lectures.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+#navbar-nav,
+.navbar-nav a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(234, 157, 177);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px ; /* Добавляем отступы для улучшения внешнего вида */
+    margin: 5px;
+    /* Предотвращаем уменьшение размера ссылок */
+
+    
+}
+#navbar-nav,
+.navbar-nav a:active{
+    color: rgb(255, 255, 255);
+}
+#navbar-nav,
+.navbar-nav a:hover{
+    background-color:rgb(221, 96, 130) ;
+} 
+
+.card-body a{
+    
+    color: rgb(115, 52, 69);
+    text-decoration: none;
+
+    margin: 5px;
+  
+
+    
+}
+.card-body a:active{
+    color: rgb(221, 197, 213);
+}
+.card-body a:hover{
+
+    background-color:rgb(238, 194, 206) ;
+} 
+.table thead th {
+    background-color: #f4dada !important;
+    color: rgb(0, 0, 0) !important;
+    
+}
+.scrollToTop {
+    position: fixed;
+    bottom: 10px; /* Расположение от нижней части экрана */
+    left: 2%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Сдвиг на половину ширины кнопки для точного центрирования */
+    background-color: rgba(126, 61, 195, 0.8); /* Полупрозрачный цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Поля вокруг текста */
+    border-radius: 5px; /* Закругленные углы */
+    text-decoration: none; /* Убираем подчеркивание */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    z-index: 1000; /* Убедитесь, что кнопка поверх других элементов */
+  }
+  
+  .scrollToTop:hover {
+    background-color: rgb(109, 29, 125); /* Цвет фона при наведении */
+}
+
+.accordion-header button{
+    background-color: #f4dada !important;
+   
+}
+.accordion-header button:hover{
+
+    background-color: #d4a2a2 !important;
+}
+
+.accordion-item{
+    border-color:rgb(170, 111, 111) !important;
+}
+
+
+ @media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+ }
+
+ .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+ }
+
+ .carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    text-align: center;
+ }
+
+ .carousel-caption h5 {
+    font-weight: bold;
+    margin-bottom: 8px;
+ }
+
+ @media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 15px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+ }
